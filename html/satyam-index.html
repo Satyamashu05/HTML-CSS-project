@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satyam's fitness</title>
+    <link rel="stylesheet" href="../css/satyam-style.css" type="text/css">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+</head>
+<style>
+    body{
+    background-image: url(../img/man-2604149_1280.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+    color: black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    background-color: rgb(165, 75, 249);    
+}
+
+.header .mid{
+    align-content: space-between;
+}
+
+.left{
+    border: 5px double;
+    border-radius: 100px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: linear-gradient(yellow,white,yellow);
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+.left img{
+    transform: translate(0px,30px);
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    transform: translate(0px,50px);
+}
+
+.navbar ul li{
+    display: flex;    
+    transform: scale(2);    
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: rgb(249, 235, 235); 
+    padding-left:20px;
+    padding-right: 20px;
+    margin-left: 60px;
+    margin-right: 60px;   
+}
+.navbar li a:hover,.navbar li a.active{
+    background-color: aqua;
+    color: rgb(46, 45, 45);
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.bts{
+    font-family: sans-serif;
+    transform: scale(2);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+.right{
+    display: inline-block;
+    transform: translate(-50px,60px);    
+}
+
+.right .bts{
+    font-family: sans-serif;
+    transform: scale(3);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+.art{
+    border: 3px solid wheat;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+}
+.art h1{
+    color: goldenrod;
+    font-size: 4em;
+    margin-left: 20px;    
+}
+
+.art p{
+    color:rgb(221, 181, 0);
+    font-weight: 600;
+    font-size: 1.5em;
+}
+footer a{
+    background-color: blanchedalmond;
+    display: inline-block;
+    font-size: 2em;
+    border: 3px dotted;
+    animation:anima 3s linear 0s infinite alternate;
+    transform: skewX();
+    transform: skewY();
+    text-decoration: none;
+}
+
+@keyframes anima{
+    from{transform: translate(0px,0px);}
+    to{transform: translate(50px,50px);}   
+}
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <!--Left code-->
+            <img src="../img/barbell-155218_1280.png" alt="Logo" title="Satyam's Gym Logo" width="150px"><br>
+            <h4>Fitness<br>Only<br>💪💪💪</h4>
+        </div>
+        <div class="mid">
+            <!--Mid code-->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="satyam-index.html" class="active">Home</a></li>
+                    <li><a href="satyam-about.html">About us</a></li>
+                    <li><a href="satyam-program.html">Programs</a></li>
+                    <li><a href="satyam-contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <!--Right code-->
+            <button class="bts">Free trial</button><br>
+        </div>
+    </header>
+
+    <main>
+        <article class="art">
+            <h1>Our legacy</h1><br>
+            <p>Satyam's Gym is a globally renowned fitness brand that has made its mark in India. With a strong legacy dating back to 1965 in Venice Beach, California, Satyam's Gym has become synonymous with fitness excellence and innovation. Satyam’s Gym India carries the legacy ahead in the home country since its inception in 2002. World-class fitness facilities and a comprehensive range of workout programs tailored to meet the needs of diverse fitness enthusiasts is what sets us apart from others.</p>
+            <p>Satyam'Gym India, a part of this esteemed legacy, has expanded its presence across various cities, aiming to empower individuals to achieve their fitness goals, regardless of their fitness levels or aspirations. It's a fitness haven that combines state-of-the-art equipment, expert trainers, and a supportive community to foster a holistic approach to wellness.</p>
+        </article>
+
+        
+
+    <footer>
+        <a href="satyam-feedback.html">Give some feedback<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;😊😊😊</a>
+    </footer>
+    
+</body>
+</html>

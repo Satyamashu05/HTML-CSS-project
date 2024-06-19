@@ -1,0 +1,102 @@
+body{
+    background: url(../img/img2.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.header{
+    color: black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    background-color: rgb(165, 75, 249);
+    margin: 0px;
+}
+
+.header .mid{
+    align-content: space-between;
+}
+.left{
+    border: 5px double;
+    border-radius: 100px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: linear-gradient(yellow,white,yellow);
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+.left img{
+    transform: translate(0px,30px);
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    transform: translate(0px,50px);
+}
+
+.navbar ul li{
+    display: flex;    
+    transform: scale(2);    
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: rgb(249, 235, 235); 
+    padding-left:20px;
+    padding-right: 20px;
+    margin-left: 60px;
+    margin-right: 60px;   
+}
+.navbar li a:hover,.navbar li a.active{
+    background-color: aqua;
+    color: rgb(46, 45, 45);
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.bts{
+    font-family: sans-serif;
+    transform: scale(2);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+.right{
+    display: inline-block;
+    transform: translate(-50px,60px);    
+}
+
+.right .bts{
+    font-family: sans-serif;
+    transform: scale(3);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+.about-me h1{
+    color: rgb(240, 193, 5);
+    font-size: 2em;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.about-me .subtitle{
+    font-weight: 600;
+    font-family: sans-serif;
+    color: coral;
+}
+.about-me .para{
+    font-weight: 600;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+img{
+    float: right;
+}

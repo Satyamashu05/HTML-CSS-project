@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satyam's fitness</title>
+    <link rel="stylesheet" href="../css/satyam-program.css">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+</head>
+<style>
+    body{
+    background: rgb(245, 235, 215);
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.header{
+    color: black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    background-color: rgb(165, 75, 249);
+    margin: 0px;
+}
+
+.header .mid{
+    align-content: space-between;
+}
+.left{
+    border: 5px double;
+    border-radius: 100px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: linear-gradient(yellow,white,yellow);
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+.left img{
+    transform: translate(0px,30px);
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    transform: translate(0px,50px);
+}
+
+.navbar ul li{
+    display: flex;    
+    transform: scale(2);    
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: rgb(249, 235, 235); 
+    padding-left:20px;
+    padding-right: 20px;
+    margin-left: 60px;
+    margin-right: 60px;   
+}
+.navbar li a:hover,.navbar li a.active{
+    background-color: aqua;
+    color: rgb(46, 45, 45);
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.bts{
+    font-family: sans-serif;
+    transform: scale(2);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+.right{
+    display: inline-block;
+    transform: translate(-50px,60px);    
+}
+
+.right .bts{
+    font-family: sans-serif;
+    transform: scale(3);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+main img{
+    height: 300px;
+    width: 500px;
+}
+
+h1{
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+}
+
+h2{
+    font-size: 2em;
+}
+p{
+    font-size: 1.3em;
+}
+
+main .first{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+main .second{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+
+main .third{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-content: space-around;
+    justify-content: space-around;
+    background-color: yellow;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: sans-serif;
+}
+footer p{
+    transform: translate(0px,-30px);
+}
+footer button{
+    background-color: rgb(7, 7, 32);
+    color: yellow;
+    height: 80px;
+    width: 200px;
+    font-size: 20px;
+    transform: translate(0px,60px);
+}
+
+
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <!--Left code-->
+            <img src="../img/barbell-155218_1280.png" alt="Logo" title="Satyam's Gym Logo" width="150px"><br>
+            <h4>Fitness<br>Only<br>💪💪💪</h4>
+        </div>
+        <div class="mid">
+            <!--Mid code-->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="satyam-index.html">Home</a></li>
+                    <li><a href="satyam-about.html">About us</a></li>
+                    <li><a href="satyam-program.html" class="active">Programs</a></li>
+                    <li><a href="satyam-contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <!--Right code-->
+            <button class="bts">Free trial</button><br>
+        </div>
+    </header>
+    <main>
+        <h1>Our Programs</h1>
+        <p class="main-para">
+            The diverse range of programs, from group exercises, corporate training to personalized training, caters to varying fitness levels and goals. Members get variety and the option of customization as each gym offers a diversity of exercise options and specialized programs, allowing members to choose activities that align with their interests and fitness objectives. Personalized training programs ensure workouts are tailored to individual needs, maximizing results. Participating in group exercises fosters a sense of community among members, providing social support and encouragement, which can be instrumental in maintaining consistency in their fitness journey.</p>
+        <div class="first">    
+            <div class="div1"><img src="../img/reception.jpg" alt="reception" title="Corporate Membership"></div>
+            <div class="div2">
+                <h2>Corporate Membership</h2>
+                <p>Don’t have time to go to the gym? We get the gym to you. Gold's Gym India offers <br> membership programs tailored for companies looking to promote employee wellness <br>and fitness. These programs are designed to encourage a healthier workforce by <br>providing BMI screening, diet and nutrition counselling, fitness activities and <br>seminars for building a healthier lifestyle.</p>
+            </div>
+        </div>
+        <div class="second">
+            <div><img src="../img/training.jpg" alt="training" title="Personal training"></div>
+            <div>
+                <h2 class="second">Personal Training</h2>
+                <p class="second">Gold's Gym India is known for the competent personal trainers and <br>extraordinary personal training offered by them. The individuals seeking for <br>serious goal-oriented fitness, personalized guidance, motivation, and specialized <br>workout plans, Gold’s Gym India personal training program is for them.</p>
+            </div>
+        </div>
+        <div class="third">
+            <div><img src="../img/group.jpg" alt="group" title="Group Program"></div>
+            <div>
+                <h2 class="third">Group Program</h2>
+                <p class="third">Gold's Gym India provides a variety of group fitness programs such <br>as dance fitness, yoga, HIIT, and much more tailored to cater to diverse fitness <br>preferences and goals. These group programs offer a supportive environment and a <br>sense of community while engaging participants in fun and effective workouts.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h1>Buy our's gym membership today</h1>
+            <p>Start your fitness journey!</p>
+        </div>
+        <div><button>Book your free trial</button></div>
+    </footer>
+
+    
+</body>
+</html>

@@ -1,0 +1,114 @@
+body{
+    background-image: url(../img/man-2604149_1280.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+    color: black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    background-color: rgb(165, 75, 249);    
+}
+
+.header .mid{
+    align-content: space-between;
+}
+
+.left{
+    border: 5px double;
+    border-radius: 100px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: linear-gradient(yellow,white,yellow);
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+.left img{
+    transform: translate(0px,30px);
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    transform: translate(0px,50px);
+}
+
+.navbar ul li{
+    display: flex;    
+    transform: scale(2);    
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: rgb(249, 235, 235); 
+    padding-left:20px;
+    padding-right: 20px;
+    margin-left: 60px;
+    margin-right: 60px;   
+}
+.navbar li a:hover,.navbar li a.active{
+    background-color: aqua;
+    color: rgb(46, 45, 45);
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.bts{
+    font-family: sans-serif;
+    transform: scale(2);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+.right{
+    display: inline-block;
+    transform: translate(-50px,60px);    
+}
+
+.right .bts{
+    font-family: sans-serif;
+    transform: scale(3);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+.art{
+    border: 3px solid wheat;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+}
+.art h1{
+    color: goldenrod;
+    font-size: 4em;
+    margin-left: 20px;    
+}
+
+.art p{
+    color:rgb(221, 181, 0);
+    font-weight: 600;
+    font-size: 1.5em;
+}
+footer a{
+    background-color: blanchedalmond;
+    display: inline-block;
+    font-size: 2em;
+    border: 3px dotted;
+    animation:anima 3s linear 0s infinite alternate;
+    transform: skewX();
+    transform: skewY();
+    text-decoration: none;
+}
+
+@keyframes anima{
+    from{transform: translate(0px,0px);}
+    to{transform: translate(50px,50px);}   
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satyam's fitness</title>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/satyam-contact.css">
+</head>
+<style>
+    body{
+    background: url(../img/gym.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.header{
+    color: black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    background-color: rgb(165, 75, 249);
+    margin: 0px;
+}
+
+.header .mid{
+    align-content: space-between;
+}
+.left{
+    border: 5px double;
+    border-radius: 100px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: linear-gradient(yellow,white,yellow);
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+.left img{
+    transform: translate(0px,30px);
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    transform: translate(0px,50px);
+}
+
+.navbar ul li{
+    display: flex;    
+    transform: scale(2);    
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: rgb(249, 235, 235); 
+    padding-left:20px;
+    padding-right: 20px;
+    margin-left: 60px;
+    margin-right: 60px;   
+}
+.navbar li a:hover,.navbar li a.active{
+    background-color: aqua;
+    color: rgb(46, 45, 45);
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.bts{
+    font-family: sans-serif;
+    transform: scale(2);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+.right{
+    display: inline-block;
+    transform: translate(-50px,60px);    
+}
+
+.right .bts{
+    font-family: sans-serif;
+    transform: scale(3);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+.container legend{
+    color: rgb(255, 140, 0);
+}
+
+.form-group input{
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.form-group legend legend .option{
+    color: antiquewhite;
+}
+
+h2{
+    transform: translate(0px,20px);
+}
+textarea{
+    font-size: 2em;
+}
+
+
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <!--Left code-->
+            <img src="../img/barbell-155218_1280.png" alt="Logo" title="Satyam's Gym Logo" width="150px"><br>
+            <h4>Fitness<br>Only<br>💪💪💪</h4>
+        </div>
+        <div class="mid">
+            <!--Mid code-->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="satyam-index.html">Home</a></li>
+                    <li><a href="satyam-about.html">About us</a></li>
+                    <li><a href="satyam-program.html">Programs</a></li>
+                    <li><a href="satyam-contact.html" class="active">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <!--Right code-->
+            <button class="bts">Free trial</button><br>
+        </div>
+    </header>
+    <div class="container">
+        <form action="https://httpbin.org/get">
+            <fieldset>
+                <legend><h1>Get in touch with us</h1></legend>
+
+                <div class="form-group">
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <input type="number" name="age" id="age" placeholder="Age" required min="0" step="1">
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" id="phone" placeholder="Phone no." required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+                <legend>
+                    <h2>Select your gender</h2>
+                    <div class="option">
+                        <input type="radio" name="gender" id="gender" value="gender">
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="gender" id="gender" value="gender">
+                        <label for="female">Female</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="gender" id="gender" value="gender">
+                        <label for="others">Others</label>
+                    </div>
+                </legend>
+                <legend><h2>Enter your concern/thought below:</h2></legend>
+                <textarea name="concern" id="concern" cols="30" rows="10" placeholder="Type your message here"></textarea>
+            </fieldset>
+            <button type="submit" class="bts" style="margin-left: 30px; border-radius: 5px;">Submit</button>
+            <button type="reset" class="bts" style="border-radius: 5px;">Reset</button>
+        </form>
+    </div>
+</main>
+</body>
+</html>
